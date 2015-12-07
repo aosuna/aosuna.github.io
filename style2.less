@@ -1,0 +1,32 @@
+.fontTexture(@color){
+    color: @color;
+    font-size: 18px;
+    font-family: Helvetica, Arial, sans-serif;
+    
+}
+
+body{
+    background: lighten(#2E2E2E, 20%);
+}
+dl{
+    & dd{
+        .fontTexture(#FFFFF0)
+    }
+
+    & dt{
+    	.fontTexture(lighten(#2F0B3A, 10%));
+	
+    }
+}
+
+
+.unorderedList {
+    
+        .fontTexture(darken(blue, 20%));
+	
+        & .orderedList{
+            .fontTexture(darken(red, 20%));
+		
+        }
+    }
+  
