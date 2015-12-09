@@ -15,3 +15,17 @@ img{
 	width: 15%;
 	height: auto;
 }
+
+.image{
+	float: left;
+	width: auto;
+	
+}
+
+#imageText{
+	font-size: .6em;
+}
+
+.recipesTxt{
+	text-align: left;
+}
