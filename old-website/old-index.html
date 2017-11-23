@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="res/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="res/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="res/css/style.css">
+    <script type="text/javascript" src="res/bootstrap/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap/js/bootstrap.min.js"></script>
+    <title>Osuna | Bio</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Title -->
+        <div class="row">
+            <div class="col-md-6 col-xs-4">
+                <img class="img-responsive title-logo" src="res/images/logo.png" alt="Github Logo">
+            </div>
+            <div class="col-md-6 col-xs-8 text-uppercase">
+                <h1 class="title-super text-thin">Adrian Osuna</h1>
+            </div>
+        </div>
+        <!-- Line Break -->
+        <div class="col-md-12">
+            <div class="row">
+                <hr class="head-divider">
+            </div>
+        </div>
+        <!-- Bio image and text -->
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-responsive self-img center-block" src="res/images/self_1.jpg" alt="Image if Adrian Osuna">
+            </div>
+            <br>
+            <div class="col-md-8">
+                <p class="bio-desc">
+                    Recent College graduate from California State University San Bernardino with a B.S. in Computer Science and a Minor in Mathematics.
+                    I have approximatley two years of programming experience in Python, PostgreSQL, C++. I am very egar to
+                    find employment to further expand my skills as a programmer. I have tried to help automate task at my
+                    current employer and help them as much as possible by incorporating the different programming techniques
+                    I have learned through experience and university. Below are a few projects that I have worked on.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-muted">Projects Worked on</h2>
+            </div>
+        </div>
+
+        <!-- Split into 2 rows of 3, each cell holding 1 image, a caption and a link to the project-->
+
+        <!-- Link to Github Projects -->
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img class="img-responsive img-hover center-block project-img" src="res/images/github.png" alt="Link to Github" data-toggle="modal"
+                    data-target="#github-acct">
+                <h3>Link to Github</h3>
+                <p>
+                    <a class="project-link" href="https://github.com/aosuna">Github Account</a>
+                </p>
+            </div>
+
+            <!-- Link to Python Project -->
+            <div class="col-md-4">
+                <img class="img-responsive img-hover center-block project-img" src="res/images/python_project.png" alt="Python Logo" data-toggle="modal"
+                    data-target="#report_gen">
+                <h3>Fast Eviction Service Project</h3>
+                <p>
+                    <a class="project-link" href="https://github.com/aosuna/report_generator">Report Generator</a>
+                </p>
+            </div>
+
+            <!-- Link to Virtual Machine And Assembler -->
+            <div class="col-md-4">
+                <img class="img-responsive img-hover center-block project-img" src="res/images/cpp.png" alt="C Plus Plus Image" data-toggle="modal"
+                    data-target="#vm_assembler">
+                <h3>Virtual Machine and Assembler</h3>
+                <p>
+                    <a class="project-link" href="https://github.com/aosuna/VirtualMachine_Assembler">Link To Project</a>
+                </p>
+            </div>
+
+            <!--
+            <div class="col-md-4">
+                <img class="img-responsive" src="res/images/nature555-330-4.jpeg" alt="Image Placeholder 555x300" data-toggle="modal" data-target="#project4" >
+                <h3>Suset Island</h3>
+                <p><a class="project-link" href="">Link To Project</a></p>
+            </div>
+            -->
+        </div>
+
+        <!-- Footer Break -->
+        <div class="col-md-12">
+            <div class="row">
+                <hr class="foot-divider">
+            </div>
+        </div>
+
+        <footer class="footer-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-left contact-info">
+                        Contact me via
+                        <a href="mailto:osuna.9@gmail.com">Email</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modals -->
+
+    <!-- Github Account -->
+    <div class="modal fade" id="github-acct" tabindex="-1" role="dialog" aria-labelledby="github" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="github">Beach View of Pier</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive modal-img img-rounded center-block" src="res/images/github.png">
+                    <br>
+                    <p>Link to my GitHub Account. Here are the repositories that I have made, worked on throughout university
+                        and my previous employer.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Python Project -->
+    <div class="modal fade" id="report_gen" tabindex="-1" role="dialog" aria-labelledby="python-proj" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="python-proj">Report Generator</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive modal-img img-rounded center-block" src="res/images/python_project.png">
+                    <br>
+                    <p>
+                        This project was written in python and developed for my previous employer. It connects to a database using ODBC drivers,
+                        executes queries against the database by reading the queries from separate files and write the results
+                        to an Excel file. The Excel File is then formated and the resulting file is then emailed to a corresponding
+                        email address based on the report name. Connection string, email account infomration and emails accounts
+                        to send reports to were sorted and read from a instructions.json file.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Virtual Machine and Assembler -->
+    <div class="modal fade" id="vm_assembler" tabindex="-1" role="dialog" aria-labelledby="vm-asmb" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="vm-asmb">Virtual Machine and Assembler</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive modal-img img-rounded center-block" src="res/images/cpp.png">
+                    <br>
+                    <p>
+                        Virtual Machine and Assembler is a University Project that was written in C++. It uses various programming techniques such
+                        as friend classes, pointers and various data structures. This project is composed of 3 parts.
+                    </p>
+                    <ul>
+                        <li>
+                            The first is the Assembler, the assember is a set of instructions that can be executed, and it outputs object code to a file
+                            that is read in by the Virtual Machine.
+                        </li>
+                        <li>
+                            Second part of the project was the have the Virtual Machine read in the object code and execute the instrucitons.
+                        </li>
+                        <li>
+                            The thrid part of the project was to build a Process Control Block or PCB that maintined all the processes environment variables,
+                            cpu time, etc to allow for context swithing between different running process.
+                        </li>
+                    </ul>
+                    <p>
+                        The operating system brought all these componets together and ran the results in ready and wait queues, kept track of the
+                        time to execute and handled reading and writing to and from a file of all processes.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="nature4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="nature4">Autumn Days</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive modal-img img-rounded center-block" src="res/images/nature555-330-4.jpeg">
+                    <br>
+                    <p>The island at sunset</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

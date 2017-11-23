@@ -1,205 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
-    <link rel="stylesheet" href="res/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="res/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="res/css/style.css">
-    <script type="text/javascript" src="res/bootstrap/js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="res/bootstrap/js/bootstrap.min.js"></script>
     <title>Osuna | Bio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Adrian Osuna</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="#about-me">About</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
-        <!-- Title -->
-        <div class="row">
-            <div class="col-md-6 col-xs-4">
-                <img class="img-responsive title-logo" src="res/images/logo.png" alt="Github Logo">
-            </div>
-            <div class="col-md-6 col-xs-8 text-uppercase">
-                <h1 class="title-super text-thin">Adrian Osuna</h1>
-            </div>
-        </div>
-        <!-- Line Break -->
-        <div class="col-md-12">
-            <div class="row">
-                <hr class="head-divider">
-            </div>
-        </div>
-        <!-- Bio image and text -->
-        <div class="row">
-            <div class="col-md-4">
-                <img class="img-responsive self-img center-block" src="res/images/self_1.jpg" alt="Image if Adrian Osuna" >
-            </div> <br>
-            <div class="col-md-8">
-                <p class="bio-desc">
-                    Recent College graduate from California State University San Bernardino with a B.S. in Computer Science and a Minor in Mathematics.
-                    I have approximatley two years of programming experience in Python, PostgreSQL, C++. I have recently started programming in JavaScript.
-                    I am very egar to find employment to further expand my skills as a programmer. I have tried to help automate task at my current employer
-                    and help them as much as possible by incorporating the different programming techniques I have learned through experience and university.
-                    Below are a few projects that I have worked on.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-muted">Projects Worked on</h2>
-            </div>
-        </div>
-
-        <!-- Split into 2 rows of 3, each cell holding 1 image, a caption and a link to the project-->
-
-        <!-- Link to Github Projects -->
-        <div class="row text-center">
-            <div class="col-md-4">
-                <img class="img-responsive img-hover center-block project-img" src="res/images/github.png" alt="Link to Github" data-toggle="modal" data-target="#github-acct" >
-                <h3>Link to Github</h3>
-                <p><a class="project-link" href="https://github.com/aosuna">Github Account</a></p>
-            </div>
-
-            <!-- Link to Python Project -->
-            <div class="col-md-4">
-                <img class="img-responsive img-hover center-block project-img" src="res/images/python_project.png" alt="Python Logo" data-toggle="modal" data-target="#report_gen" >
-                <h3>Fast Eviction Service Project</h3>
-                <p><a class="project-link" href="https://github.com/aosuna/report_generator">Report Generator</a></p>
-            </div>
-            
-            <!-- Link to Virtual Machine And Assembler -->
-            <div class="col-md-4">
-                <img class="img-responsive img-hover center-block project-img" src="res/images/cpp.png" alt="C Plus Plus Image" data-toggle="modal" data-target="#vm_assembler" >
-                <h3>Virtual Machine and Assembler</h3>
-                <p><a class="project-link" href="https://github.com/aosuna/VirtualMachine_Assembler">Link To Project</a></p>
-            </div>
-
-            <!--
-            <div class="col-md-4">
-                <img class="img-responsive" src="res/images/nature555-330-4.jpeg" alt="Image Placeholder 555x300" data-toggle="modal" data-target="#project4" >
-                <h3>Suset Island</h3>
-                <p><a class="project-link" href="">Link To Project</a></p>
-            </div>
-            -->
-        </div>
-
-        <!-- Footer Break -->
-        <div class="col-md-12">
-            <div class="row">
-                <hr class="foot-divider">
-            </div>
-        </div>
-    
-        <footer class="footer-contact">
-            <div class="container">
+        <!-- About me -->
+        <div class="row section-item" id="about-me">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12 text-left contact-info">
-                        Contact me via <a href="mailto:osuna.9@gmail.com">Email</a>
+                    <h2>About Me</h2>
+                    <div class="col-xs-12 col-md-4">
+                        <img class="self-img" alt="Adrian Osuna" src="res/images/self_1.jpg">
+                    </div>
+                    <div class="col-xs-12 col-md-7">
+                        <section>Hi, I am a recent College graduate from California State University, San Bernardino with a B.S. in
+                            Computer Science and a Minor in Mathematics. I have approximately two years of programming experience
+                            in Python, PostgreSQL, C++ and I am trying to become a web developer. My end goal is to become
+                            a Full Stack Developer, but of course I would like to start with a Frontend Development Job.
+                            I have recently started programming in HTML/CSS, jQuery and JavaScript. I am quite familiar with
+                            Bootstrap and I am diligently learning Nodejs. I am very eager to find employment to further
+                            expand my skills as a programmer. I have tried to help automate tasks at my previous employer
+                            and help them as much as possible by incorporating different programming techniques I have learned
+                            through experience and university. Below are a few projects that I have worked on.</section>
                     </div>
                 </div>
             </div>
-        </footer>
-    </div>
+            <!-- End Container-Fluid-->
+        </div>
+        <!-- End about me -->
 
-    <!-- Modals -->
-
-    <!-- Github Account -->
-    <div class="modal fade" id="github-acct" tabindex="-1" role="dialog" aria-labelledby="github" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="github">Beach View of Pier</h4>
-                </div>
-                <div class="modal-body"> 
-                    <img class="img-responsive modal-img img-rounded center-block" src="res/images/github.png"> <br>
-                    <p>Link to my GitHub Account. Here are the repositories that I have made, worked on throughout university and my previous employer.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <!-- Portfolio -->
+        <div class="row section-item" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <h2>Portfolio</h2>
+                    <div class="col-xs-4 col-md-4 project-item">
+                        <a href="https://github.com/aosuna" target="_blank">
+                            <img class="img-responsive" alt="Github Logo" src="http://aosuna.github.io/res/images/python_project.png"> </a>
+                        <figcaption>
+                            <a href="https://github.com/aosuna/report_generator" target="_blank">Python-Report Builder</a>
+                        </figcaption>
+                    </div>
+                    <div class="col-xs-4 col-md-4">
+                        <a href="https://github.com/aosuna/VirtualMachine_Assembler" target="_blank">
+                            <img class="img-responsive" src="res/images/cpp.png">
+                        </a>
+                        <figcaption>
+                            <a href="https://github.com/aosuna/VirtualMachine_Assembler" target="_blank">Toy Virtual Machine and Assembler</a>
+                        </figcaption>
+                    </div>
+                    <div class="col-xs-4 col-md-4">
+                        <a href="#">
+                            <img class="img-responsive" src="http://via.placeholder.com/400x250">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- End Portfolio -->
 
-    <!-- Python Project -->
-    <div class="modal fade" id="report_gen" tabindex="-1" role="dialog" aria-labelledby="python-proj" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="python-proj">Report Generator</h4>
+        <div class="row section-item" id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="row">
+                    <!-- Left Side form submit -->
+                    <div class="col-xs-12 col-md-6">
+                        <form>
+                            <div class="form-group" id="name-submit">
+                                <label class="col-form-label" for="name">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="John Donnett">
+                            </div>
+                            <div class="form-group" id="email-submit">
+                                <label class="col-form-label" for="email">Email Address</label>
+                                <input type="text" class="form-control" id="email" placeholder="johndonnett@mail.com">
+                            </div>
+                            <div class="form-group" id="comment-submit">
+                                <label class="col-form-label" for="comment">Comment:</label>
+                                <textarea class="form-control" rows="4" id="comment"></textarea>
+                                <fieldset disabled>
+                                    <button type="click" class="btn btn-primary " id="send-email">Submit</button>
+                                </fieldset>
+                        </form>
+                        </div>
+                        <!-- End left side form submit-->
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <section>
+                            <p>If you have any questions or want to contact me, please feel free to fill out the form and reach
+                                me by email, or click on the social links.</p>
+                        </section>
+                        <section class="social">
+                            <span class="social-icon">
+                                <a href="mailto:osuna.9@gmail.com" target="_blank">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                </a>
+                            </span>
+                            <span class="social-icon">
+                                <a href="https://www.linkedin.com/in/adrian-osuna-939685140/" target="_blank">
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                            </span>
+                            <span class="social-icon">
+                                <a href="https://twitter.com/Aosuna9" target="_blank">
+                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                </a>
+                            </span>
+                            <span class="social-icon">
+                                <a href="https://github.com/aosuna" target="_blank">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </span>
+                        </section>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <img class="img-responsive modal-img img-rounded center-block" src="res/images/python_project.png"> <br>
-                    <p>
-                        This project was written in python and developed for my previous employer. It connects to a database using ODBC drivers, executes queries against the database
-                        by reading the queries from separate files and write the results to an Excel file. The Excel File is then formated and the resulting file is then
-                        emailed to a corresponding email address based on the report name. 
-                        Connection string, email account infomration and emails accounts to send reports to were sorted and read from a instructions.json file.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
+                <!-- End Row -->
             </div>
-        </div>
-    </div>
+            <!-- End Contact Me-->
 
-    <!-- Virtual Machine and Assembler -->
-    <div class="modal fade" id="vm_assembler" tabindex="-1" role="dialog" aria-labelledby="vm-asmb" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="vm-asmb">Virtual Machine and Assembler</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive modal-img img-rounded center-block" src="res/images/cpp.png"> <br>
-                    <p>
-                        Virtual Machine and Assembler is a University Project that was written in C++. 
-                        It uses various programming techniques such as friend classes, pointers and various data structures.
-                        This project is composed of 3 parts. 
-                    </p>
-                    <ul>
-                        <li>
-                            The first is the Assembler, the assember is a set of instructions
-                            that can be executed, and it outputs object code to a file that is read in by the Virtual Machine.
-                        </li>
-                        <li>
-                            Second part of the project was the have the Virtual Machine read in the object code and execute the instrucitons.
-                        </li>
-                        <li>
-                            The thrid part of the project was to build a Process Control Block or PCB that maintined all the processes 
-                            environment variables, cpu time, etc to allow for context swithing between different running process.
-                        </li>
-                    </ul> 
-                    <p>
-                        The operating system brought all these componets together and ran the results in ready and wait queues, 
-                        kept track of the time to execute and handled reading and writing to and from a file of all processes.  
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
         </div>
-    </div>
-
-    <!--  -->
-    <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="nature4" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="nature4">Autumn Days</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive modal-img img-rounded center-block" src="res/images/nature555-330-4.jpeg"> <br>
-                    <p>The island at sunset</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+        <!-- End full container -->
+        <script src="src/index.js"></script>
 </body>
+
 </html>
