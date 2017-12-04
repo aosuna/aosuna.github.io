@@ -1,9 +1,6 @@
-let urlAPI = 'http://api.forismatic.com/api/1.0/?method=getQuote&formate=jsonp&lang=en&jsonp=?';
+let urlAPI = 'https://api.forismatic.com/api/1.0/?method=getQuote&formate=jsonp&lang=en&jsonp=?';
 
 function getQuote() {
-    if(location.protocol === 'https:') {
-        urlAPI = 'https://cors-anywhere.herokuapp.com/' + urlAPI;
-    }
     $.ajax({
         url: urlAPI,
         data: {
@@ -37,7 +34,7 @@ function postTweet() {
     if (tweet['quote'] === undefined || tweet['quote'] === '') {
         alert('cannot send blank Tweet');
     } else if (tweet['quote'].length >= 140 - (tweet['author'].length + 5)) {
-        let trimTweet = tweet['quote'].slice(0, tweet['author'].length - 5) + '... ';
+        let trimTweet = tweet['quote'].slice(0, -(tweet['author'].length - 5)) + '... ';
         twitterLink += encodeURIComponent(trimTweet + '\n' + tweet['author']);
         window.open(twitterLink, '_blank');
     } else {
