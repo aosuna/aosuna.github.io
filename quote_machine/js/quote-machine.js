@@ -1,6 +1,9 @@
-const urlAPI = 'http://api.forismatic.com/api/1.0/?method=getQuote&formate=jsonp&lang=en&jsonp=?';
+let urlAPI = 'http://api.forismatic.com/api/1.0/?method=getQuote&formate=jsonp&lang=en&jsonp=?';
 
 function getQuote() {
+    if(location.protocol === 'https:') {
+        urlAPI = 'https://cors-anywhere.herokuapp.com/' + urlAPI;
+    }
     $.ajax({
         url: urlAPI,
         data: {
