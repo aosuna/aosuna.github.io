@@ -34,7 +34,7 @@ function postTweet() {
     if (tweet['quote'] === undefined || tweet['quote'] === '') {
         alert('cannot send blank Tweet');
     } else if (tweet['quote'].length >= 140 - (tweet['author'].length + 5)) {
-        let trimTweet = tweet['quote'].slice(0, -(tweet['author'].length - 5)) + '... ';
+        let trimTweet = tweet['quote'].slice(0, (140 - (tweet['author'].length+5))) + '...';
         twitterLink += encodeURIComponent(trimTweet + '\n' + tweet['author']);
         window.open(twitterLink, '_blank');
     } else {
