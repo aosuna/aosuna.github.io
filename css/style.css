@@ -2,8 +2,8 @@ body {
     padding-top: 60px;
     padding-bottom: 5px;
     font-family: san-sarif;
-    background-color: #262e3a;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     position: relative;
   }
   
@@ -70,6 +70,11 @@ body {
   .social-icon {
     margin-right: 10px;
   }
+
+ .proj-text {
+   text-align: center;
+   font-size: 18px;
+ }
   
   #send-email {
     margin-top: 15px;
