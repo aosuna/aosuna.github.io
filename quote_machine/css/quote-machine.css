@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Slab:100,300);
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: #994747;
+  font-weight: 100;
+  font-size: 20px; }
+
+img,
+embed,
+object,
+video {
+  max-width: 100%; }
+
+[class*=fa-]::before {
+  font-weight: 300;
+  font-size: 24px; }
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 750px; }
+
+.quote-box {
+  width: 100%;
+  margin-top: 25vh;
+  border-radius: 10px;
+  padding: 50px;
+  background-color: #eeeeee;
+  display: table;
+  position: relative; }
+  .quote-box .quote-text {
+    font-family: 'Noto', serif;
+    margin-bottom: 25px;
+    text-align: center; }
+    .quote-box .quote-text i {
+      font-size: 1.0em; }
+    .quote-box .quote-text i:first-child {
+      margin-right: 0.4em; }
+    .quote-box .quote-text i:last-child {
+      margin-left: 0.4em; }
+    .quote-box .quote-text .author {
+      margin-top: 15px;
+      text-align: left; }
+  .quote-box .button-items {
+    margin-top: 40px;
+    position: relative; }
+    .quote-box .button-items .btn {
+      border: none;
+      border-radius: 10px;
+      font-size: 0.875em;
+      padding: 8.5px 15px;
+      opacity: 1;
+      cursor: auto;
+      margin-top: 30px; }
+      .quote-box .button-items .btn#tweet {
+        float: left; }
+      .quote-box .button-items .btn#get-quote {
+        float: right; }
+      .quote-box .button-items .btn:hover {
+        opacity: 0.85; }
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .quote-box .button-items .btn {
+    padding: 5px 10px;
+    margin: 0px; } }
+
+/*# sourceMappingURL=quote-machine.css.map */
