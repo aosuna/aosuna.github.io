@@ -79,6 +79,14 @@ body {
   #send-email {
     margin-top: 15px;
   }
+
+  .project-set {
+    margin-bottom: 20px;
+  }
+  
+  .project-set:last-child {
+    margin-bottom: 0px;
+  }
   
   @media screen and (max-width: 992px) {
     .self-img {
