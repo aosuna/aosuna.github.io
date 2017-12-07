@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:700|Noto+Serif|Roboto+Slab:100,300);
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #626867de;
+    font-weight: 300;
+    font-size: 20px;
+    color: #000000;
+}
+
+body::after {
+    opacity: 0.5;
+}
+
+button.degrees {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #1b2fa1;
+}
+
+[class*=wi-]::before {
+    font-weight: 300;
+    font-size: 3em;
+}
+
+.container {
+    max-width: 480px;
+}
+
+.content {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background-color: #eee;
+    text-align: center;
+    z-index: 20;
+    box-shadow: 10px 10px 5px #000000;
+}
+
+.header-text {
+    font-size: 3em;
+    font-family: 'Merriweather', serif;
+}
+
+.alt-location {
+    font-size: 14px;
+    font-style: italic;
+}
+
+@media screen and (min-width: 720px) {
+    .container {
+        padding-top: 25px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .container {
+        max-width: 80%;
+        padding-top: 50px;
+    }
+    .header-text {
+        font-size: 2em;
+    }
+    body {
+        font-size: 16px;
+    }
+    .alt-location {
+        font-size: 0.75em;
+    }
+}
