@@ -47,6 +47,7 @@ let getWeather = function (lon, lat) {
     $.ajax({
         url: urlAPI + lon + '&' + lat,
         success: function (res) {
+            $(".loader").css("display", "none");
             // console.log(JSON.stringify(res, null, 4));
             celciusTemp = res.main.temp;
             if (altLocation) {
