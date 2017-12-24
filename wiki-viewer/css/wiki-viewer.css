@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Slab:100,300);
+body {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff; }
+
+body, html {
+  height: 100%;
+  background-color: #00198a; }
+
+header {
+  padding-top: 15px;
+  margin-top: 15px; }
+  header .header-title {
+    text-align: center;
+    font-size: 2em; }
+
+[class*=fa-]::before {
+  font-weight: 300;
+  font-size: 24px;
+  color: #ffffff; }
+  [class*=fa-]::before .fa-search {
+    background-color: lightblue; }
+
+.wiki-random {
+  text-align: right; }
+
+.wiki-search {
+  text-align: left; }
+
+div #wiki-result {
+  padding-top: 20px;
+  margin-top: 10px; }
+
+button.btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
+button.btn:hover {
+  color: lightblue; }
+
+div.search-text input[type=text] {
+  width: 100%;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out; }
+
+#scroll-top {
+  font-size: 15px;
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 10px;
+  /* Place the button at the bottom of the page */
+  right: 15px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: lightblue;
+  /* Set a background color */
+  color: #000000;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */ }
+
+#scroll-top:hover {
+  background-color: #ffffff;
+  color: #000000; }
+
+@media screen and (max-width: 420px) {
+  input[type=text] {
+    width: 100%; } }
+@media screen and (max-width: 769px) {
+  .wiki-random {
+    text-align: center;
+    font-size: 2em; }
+
+  .wiki-search {
+    text-align: center;
+    font-size: 2em; } }
+#wiki-result {
+  color: #000000; }
+  #wiki-result div.wiki-query {
+    width: 100%;
+    margin: 15px 0px; }
+    #wiki-result div.wiki-query a {
+      margin-right: 5px; }
+  #wiki-result div.wiki-query:first-child {
+    margin-top: 15px; }
+  #wiki-result div.wiki-query:last-child {
+    margin-bottom: 40px; }
+
+/*# sourceMappingURL=wiki-viewer.css.map */
