@@ -89,64 +89,77 @@ function getWeatherIcon(weather) {
             setIcon += 'thunderstorm';
             $("body").css({
                 "background": "url(\"images/thunderstorm.jpg\") no-repeat center center fixed",
-                "background-size": "cover"
+                "background-size": "cover",
+                "min-height": "100%"
             });
         } else if (weather >= 300 && weather < 400) {
             // light drizzle/sprinkle
             setIcon += 'sprinkle';
             $("body").css({
                 "background": "url(\"images/sprinkle.jpg\") no-repeat center center fixed",
-                "background-size": "cover"
+                "background-size": "cover",
+                "min-height": "100%"
             });
         } else if (weather >= 500 && weather < 600) {
             // rain
             setIcon += 'rain';
             $("body").css({
                 "background": "url(\"images/rain.jpg\") no-repeat center center fixed",
-                "background-size": "cover"
+                "background-size": "cover",
+                "min-height": "100%"
             });
         } else if (weather >= 600 && weather < 700) {
             // snow
             setIcon += 'snow';
             $("body").css({
                 "background": "url(\"images/snow.jpg\") no-repeat center center fixed",
-                "background-size": "cover"
+                "background-size": "cover",
+                "min-height": "100%"
             });
         } else if (weather >= 700 && weather < 800) {
             // atmosphere, affecting vision
             setIcon += 'fog';
             $("body").css({
                 "background": "url(\"images/fog.jpg\") no-repeat center center fixed",
-                "background-size": "cover"
+                "background-size": "cover",
+                "min-height": "100%"
             });
         } else if (weather === 800) {
             // clear weather
             setIcon = setIcon.includes('day') ? 'wi wi-day-sunny' : 'wi wi-night-clear';
-            let setImage = setIcon.includes('day') ? "url(\"images/sunny.png\") no-repeat center center fixed" : "url(\"images/clear-night.png\") no-repeat center center fixed";
+            let setImage = setIcon.includes('day') ? 
+                    "url(\"images/sunny.png\") no-repeat center center fixed" : 
+                    "url(\"images/clear-night.png\") no-repeat center center fixed";
             $("body").css({
                 "background": setImage,
-                "background-size": "cover"
+                "background-size": "cover",
+                "min-height": "100%"
             });
         } else if (weather >= 801 && weather <= 804) {
             // cloudy
             setIcon += 'cloudy';
             $("body").css({
                 "background": "url(\"images/cloudy.jpg\") no-repeat center center fixed",
-                "background-size": "cover"
+                "background-size": "cover",
+                "min-height": "100%"
             });
         } else if (weather >= 900 && weather <= 962) {
             // windy
             setIcon = 'wi wi-strong-wind';
             $("body").css({
                 "background-image": "url(\"images/windy.jpg\") no-repeat center center fixed",
-                "background-size": "cover"
+                "background-size": "cover",
+                "min-height": "100%"
             });
         } else {
             setIcon = setIcon.includes('day') ? 'wi wi-day-sunny' : 'wi wi-night-clear';
-            let setImage = setIcon.includes('day') ? "url(\"images/sunny.png\") no-repeat center center fixed" : "url(\"images/clear-night.png\") no-repeat center center fixed";
+            let setImage = setIcon.includes('day') ? 
+                    "url(\"images/sunny.png\") no-repeat center center fixed" : 
+                    "url(\"images/clear-night.png\") no-repeat center center fixed";
             $("body").css({
                 "background-image": setImage,
-                "background-size": "cover"
+                "background-size": "cover",
+                "min-height": "100%"
             });
         }
         $('#weather-icon').addClass(setIcon);
